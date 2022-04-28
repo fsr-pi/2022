@@ -17,7 +17,7 @@ namespace Secrets
                                          .AddJsonFile("appsettings.json")   //order is important!
                                          .AddJsonFile("missing_one.json", optional: true)   //
                                          .AddEnvironmentVariables()    // include Package Microsoft.Extensions.Configuration.EnvironmentVariables                                     
-                                         .AddUserSecrets("RPPP-Secrets") //package Microsoft.Extensions.Configuration.UserSecrets
+                                         .AddUserSecrets("PI-Secrets") //package Microsoft.Extensions.Configuration.UserSecrets
                                          .Build();
 
       Console.WriteLine($"Custom env variable using configuration = " + configuration["CustomEnvValue"]);

@@ -15,7 +15,7 @@ namespace Barricades
       c["Ivan"] = 5;
       c["Marko"] = 1;
       c["Luka"] = 3;
-      //p["Marija"] = -7; //should throw an exception
+      //c["Marija"] = -7; //should throw an exception
       Console.WriteLine("Average grade: " + c.AverageGrade());
       Console.WriteLine("Petar's grade: " + c["Petar"]); //prints -1
     }
